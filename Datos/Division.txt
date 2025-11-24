@@ -1,0 +1,17 @@
+﻿//Probando DataBase
+Usuario: admin
+
+//verificando repositorio de GitHub
+
+
+Base de datos:
+Thamara, Ruth
+
+Datos
+Thamara, Ruth
+
+Negocio
+Louka, Sergio
+
+Presentacion
+Leonel

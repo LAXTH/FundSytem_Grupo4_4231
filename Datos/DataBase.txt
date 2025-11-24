@@ -1,4 +1,0 @@
-﻿//Probando DataBase
-Usuario: admin
-
-//verificando repositorio de GitHub
