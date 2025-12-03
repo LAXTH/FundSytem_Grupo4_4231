@@ -35,6 +35,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -46,20 +47,112 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Forms\FormAgregarAlmacen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAgregarAlmacen.Designer.cs">
+      <DependentUpon>FormAgregarAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAgregarInsumo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAgregarInsumo.Designer.cs">
+      <DependentUpon>FormAgregarInsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormAgregarProveedor.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormAgregarProveedor.Designer.cs">
+      <DependentUpon>FormAgregarProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FormPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FormPrincipal.Designer.cs">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UsersControls\UCAlmacen.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControls\UCAlmacen.Designer.cs">
+      <DependentUpon>UCAlmacen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControls\UCGraficas.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControls\UCGraficas.Designer.cs">
+      <DependentUpon>UCGraficas.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControls\UCInsumo.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControls\UCInsumo.Designer.cs">
+      <DependentUpon>UCInsumo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControls\UCProveedor.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControls\UCProveedor.Designer.cs">
+      <DependentUpon>UCProveedor.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UsersControls\UCInicio.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UsersControls\UCInicio.Designer.cs">
+      <DependentUpon>UCInicio.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Forms\FormAgregarAlmacen.resx">
+      <DependentUpon>FormAgregarAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAgregarInsumo.resx">
+      <DependentUpon>FormAgregarInsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormAgregarProveedor.resx">
+      <DependentUpon>FormAgregarProveedor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FormPrincipal.resx">
+      <DependentUpon>FormPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
+    <EmbeddedResource Include="UsersControls\UCAlmacen.resx">
+      <DependentUpon>UCAlmacen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControls\UCGraficas.resx">
+      <DependentUpon>UCGraficas.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControls\UCInicio.resx">
+      <DependentUpon>UCInicio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControls\UCInsumo.resx">
+      <DependentUpon>UCInsumo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UsersControls\UCProveedor.resx">
+      <DependentUpon>UCProveedor.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\Settings.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Settings.settings</DependentUpon>
@@ -68,6 +161,13 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\3844470-home-house_110332 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Home.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
